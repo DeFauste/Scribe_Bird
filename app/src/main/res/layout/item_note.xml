@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_note"
+    android:layout_width="match_parent"
+    android:layout_height="77dp"
+    android:background="@drawable/item_background">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_emotion"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/bcgr_img_emotion"
+        android:scaleType="center"
+        android:src="@drawable/img_neutral_emotion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:hint="@string/title_example"
+        android:maxWidth="180dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/img_emotion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_time_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/time_example"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt_note_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_note_title" />
+
+    <TextView
+        android:id="@+id/txt_note_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:breakStrategy="balanced"
+        android:hint="@string/description_example"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/txt_time_note"
+        app:layout_constraintTop_toBottomOf="@id/txt_time_note" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_weather"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/img_weather_sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="13dp"
+        android:hint="@string/data_example"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_day_week"
+        app:layout_constraintStart_toStartOf="@+id/txt_day_week"
+        app:layout_constraintTop_toBottomOf="@id/txt_day_week"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txt_day_week"
+        android:layout_width="21dp"
+        android:layout_height="15dp"
+        android:hint="@string/day_example"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/txt_day_week"
+        app:layout_constraintEnd_toEndOf="@+id/img_weather"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/img_weather"
+        app:layout_constraintTop_toBottomOf="@id/img_weather"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

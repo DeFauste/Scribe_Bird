@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Scribe Bird</string>
+    <string name="title_example">Your title</string>
+    <string name="time_example">18:50</string>
+    <string name="description_example">Lorem ipsum Lorem ipsum lorem…</string>
+    <string name="day_example">Thu</string>
+    <string name="data_example">30</string>
 </resources>

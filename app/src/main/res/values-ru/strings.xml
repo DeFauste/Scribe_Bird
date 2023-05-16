@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scribe Bird</string>
+    <string name="title_example">Ваш заголовок</string>
+    <string name="time_example">18:50</string>
+    <string name="description_example">Лорем ипсум Лорем ипсум Лорем…</string>
+    <string name="day_example">Thu</string>
+    <string name="data_example">30</string>
+
+</resources>
