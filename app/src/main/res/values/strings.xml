@@ -5,4 +5,6 @@
     <string name="description_example">Lorem ipsum Lorem ipsum lorem…</string>
     <string name="day_example">Thu</string>
     <string name="data_example">30</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
