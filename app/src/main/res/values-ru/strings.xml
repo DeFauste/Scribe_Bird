@@ -6,5 +6,7 @@
     <string name="description_example">Лорем ипсум Лорем ипсум Лорем…</string>
     <string name="day_example">Thu</string>
     <string name="data_example">30</string>
+    <string name="btn_item_note">Заметки</string>
+    <string name="Tasks">Задачи</string>
 
 </resources>
