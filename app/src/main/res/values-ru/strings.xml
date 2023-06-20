@@ -8,5 +8,6 @@
     <string name="data_example">30</string>
     <string name="btn_item_note">Заметки</string>
     <string name="Tasks">Задачи</string>
+    <string name="simple_question">What are you thinking about?</string>
 
 </resources>
