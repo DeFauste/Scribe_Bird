@@ -7,67 +7,105 @@
     android:padding="10dp"
     tools:context=".presentation.fragment.AddNoteFragment">
 
-    <LinearLayout
-        android:id="@+id/emotionsList"
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/emotionsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_neutral1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_neutral_emotion" />
+
+                <ImageView
+                    android:id="@+id/img_neutral2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_neutral_emotion" />
+
+                <ImageView
+                    android:id="@+id/img_neutral3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_neutral_emotion" />
+
+                <ImageView
+                    android:id="@+id/img_neutral4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_neutral_emotion" />
+
+                <ImageView
+                    android:id="@+id/img_neutral5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_neutral_emotion" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appCompatEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="top|start"
+                android:hint="@string/simple_question"
+                android:maxLines="10"
+                android:minLines="10"
+                android:padding="5dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emotionsList" />
+
+            <CheckBox
+                android:id="@+id/ch_add_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="268dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatEditText" />
+
+            <TextView
+                android:id="@+id/txt_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_weather"
+                app:layout_constraintBottom_toBottomOf="@+id/ch_add_weather"
+                app:layout_constraintEnd_toStartOf="@+id/ch_add_weather"
+                app:layout_constraintTop_toTopOf="@+id/ch_add_weather" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btn_save_note"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/img_neutral1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:src="@drawable/img_neutral_emotion" />
-
-        <ImageView
-            android:id="@+id/img_neutral2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:src="@drawable/img_neutral_emotion" />
-
-        <ImageView
-            android:id="@+id/img_neutral3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:src="@drawable/img_neutral_emotion" />
-
-        <ImageView
-            android:id="@+id/img_neutral4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:src="@drawable/img_neutral_emotion" />
-
-        <ImageView
-            android:id="@+id/img_neutral5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:src="@drawable/img_neutral_emotion" />
-    </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:minLines="10"
-        android:maxLines="10"
-        android:background="@drawable/bg_edit_text"
-        android:hint="@string/simple_question"
-        android:padding="5dp"
-        android:textSize="20sp"
-        android:gravity="top|start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emotionsList" />
-
-
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_btn_add"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

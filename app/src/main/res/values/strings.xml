@@ -10,4 +10,5 @@
     <string name="btn_item_note">Notes</string>
     <string name="Tasks">Tasks</string>
     <string name="simple_question">What are you thinking about?</string>
+    <string name="add_weather">Add weather</string>
 </resources>
